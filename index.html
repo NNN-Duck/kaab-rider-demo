@@ -2,8 +2,8 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>KAAB RIDER PRO v4.0 - ระบบบันทึกงานไรเดอร์มืออาชีพ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>KAAB RIDER PRO v4.4 - ระบบบันทึกงานไรเดอร์</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -85,46 +85,28 @@
             100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
         }
     </style>
-</head>
+<meta name="theme-color" content="#0b1120"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KAAB RIDER PRO"><link rel="manifest" href="manifest.webmanifest?v=44"><link rel="apple-touch-icon" href="icon-180.png?v=44"><link rel="icon" type="image/png" href="icon-192.png?v=44">
+<style>
+:root{color-scheme:dark} body{background:radial-gradient(ellipse at top,#15233a 0,#070b14 55%);padding-bottom:calc(100px + env(safe-area-inset-bottom));} header{padding-top:env(safe-area-inset-top)} nav{padding-bottom:env(safe-area-inset-bottom)} button,input,select{touch-action:manipulation} button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #fbbf24;outline-offset:2px} .glass-card{border-radius:20px;border-color:#29364a} #appGridSelector button,#paymentGridSelector button,.expcat-tile,#tripForm label.cursor-pointer div{min-height:44px} #tripForm button[onclick^="quickSetFare"],#tripForm button[onclick^="quickAddFareDelta"],#expenseForm button[onclick^="quickAddExp"]{min-height:44px} input:not([type=hidden]):not([type=radio]):not([type=file]),select{font-size:16px!important;min-height:40px} #tripDate,#expDate{width:110px} #netProfitBox{background:linear-gradient(125deg,#123e63,#164e63 55%,#172554);border-color:#38bdf855} #statNetProfit{font-size:36px;font-variant-numeric:tabular-nums} nav button{min-height:53px} #toast{max-width:94vw;white-space:normal;text-align:center;bottom:calc(85px + env(safe-area-inset-bottom))} .brand-logo{width:46px;height:46px;object-fit:cover;border-radius:13px;flex:none;border:1px solid #38bdf855;box-shadow:0 2px 12px #38bdf81a} .brand-name{font-size:15px;white-space:nowrap;letter-spacing:.03em;font-weight:800;color:#fbbf24} .brand-sub{font-size:10px;color:#b2c3d8} #installBtn{min-height:40px;min-width:40px} header button{min-height:40px} @media(max-width:370px){.brand-name{font-size:12px}.brand-sub{font-size:9px}.brand-logo{width:36px;height:36px}header button{padding:7px!important} #tripForm>div:first-child,#expenseForm>div:first-child{flex-wrap:wrap;gap:6px}} @media(min-width:768px){main.max-w-md,header .max-w-md,nav.max-w-md{max-width:650px}} @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}} body.sunlight-mode #netProfitBox{background:#101010;border:2px solid #fff} body.sunlight-mode .brand-sub{color:#fff}
+
+/* Migration UI: accessible, thumb-friendly and legible in sunlight. */
+#stats-backup{scroll-margin-top:calc(80px + env(safe-area-inset-top))}.transfer-card{padding:18px;border-radius:20px;border:1px solid #34445b;background:#101a2a;box-shadow:0 8px 24px #0003}
+.transfer-kicker{font-size:11px;font-weight:700;letter-spacing:.12em;color:#fbbf24}.transfer-title{font-size:21px;font-weight:700;line-height:1.35;color:#f8fafc}.transfer-caption{font-size:13px;color:#b8c7da;line-height:1.5}.transfer-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;width:100%;padding:10px 12px;font-size:14px;font-weight:600;border:1px solid #3a4c65;border-radius:12px;background:#1b2a40;color:#f1f5f9}.transfer-btn:active{transform:scale(.98)}.transfer-btn:disabled{opacity:.55;cursor:not-allowed}.transfer-primary{background:#fbbf24;color:#161000;border-color:#fcd34d}.transfer-import{background:#164e63;border-color:#38bdf8;color:#ecfeff}.transfer-danger{background:#9f1239;border-color:#fb7185;color:white}.transfer-metric{background:#0b1422;border:1px solid #2b3c52;border-radius:12px;padding:10px;min-width:0}.transfer-metric b{display:block;font-size:17px;font-weight:700;overflow-wrap:anywhere;color:#f8fafc}.transfer-metric small{display:block;font-size:11px;color:#a9b9cf}.transfer-notice{border:1px solid #785b24;background:#2b2314;color:#fde68a;font-size:12px;padding:10px 12px;border-radius:12px;line-height:1.55}.transfer-file{overflow-wrap:anywhere}.transfer-error{color:#fecaca;background:#3a1820;border:1px solid #be4458;border-radius:10px;padding:10px;font-size:13px}.transfer-ok{color:#a7f3d0;background:#102d28;border:1px solid #27755e;border-radius:10px;padding:10px;font-size:13px}.transfer-status:empty{display:none}.transfer-check{display:flex;gap:10px;align-items:center;font-size:13px;color:#f1f5f9;min-height:44px}.transfer-check input{accent-color:#fbbf24;min-width:20px;width:20px;min-height:20px!important;height:20px}.transfer-hidden{display:none!important}.transfer-actions{display:grid;gap:8px}.transfer-steps{font-size:12px;line-height:1.65;color:#cbd5e1;margin-left:18px;list-style:decimal}.transfer-steps li{padding-left:2px}body.sunlight-mode .transfer-card,body.sunlight-mode .transfer-metric{background:#080808;border:2px solid #94a3b8}body.sunlight-mode .transfer-caption,body.sunlight-mode .transfer-metric small{color:#fff}body.sunlight-mode .transfer-notice{background:#201800;color:#fff;border-color:#fbbf24}nav button span{white-space:nowrap}nav button[aria-current="page"]{color:#fbbf24;font-weight:700}
+</style></head>
 <body class="min-h-screen pb-28 select-none">
 
     <!-- Top Sticky Header -->
     <header class="bg-[#0b1120]/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-30 shadow-lg">
         <div class="max-w-md mx-auto px-3.5 py-2.5 flex items-center justify-between">
             <div class="flex items-center space-x-2.5">
-                <!-- K + Cyber Duck Rider SVG Logo -->
-                <div class="w-10 h-10 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 rounded-xl flex items-center justify-center shadow-lg shadow-amber-500/20 border-2 border-amber-400 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/20 via-transparent to-sky-500/20 opacity-80"></div>
-                    <svg class="w-8 h-8 relative z-10" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12H21V52H12V12Z" fill="url(#kGrad)" />
-                        <path d="M21 31L36 12H46L30 32L47 52H36L21 33V31Z" fill="url(#kGrad)" />
-                        <path d="M33 21C33 14.5 38 10 45 10C51.5 10 56 14.5 56 21C56 23.5 54.5 25 52 25H35C33.5 25 33 23.5 33 21Z" fill="#0284c7" stroke="#38bdf8" stroke-width="1.2"/>
-                        <path d="M43 15.5H52.5C54.5 15.5 55.5 17 54.5 19.5C53 20.5 49 21 44 21C41.5 21 41 19.5 41.5 18C42 16.5 42.5 15.5 43 15.5Z" fill="#0f172a"/>
-                        <path d="M44 17H51" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
-                        <path d="M36 25H51V28C51 31.5 48 33.5 43.5 33.5C39 33.5 36 31.5 36 28V25Z" fill="#facc15"/>
-                        <path d="M49 25.5C54.5 25.5 58 27 57.5 29C57 31 52 31.5 48 30.5L49 25.5Z" fill="#f97316"/>
-                        <path d="M10 55H54" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="16 4 6 4" opacity="0.8"/>
-                        <defs>
-                            <linearGradient id="kGrad" x1="12" y1="12" x2="47" y2="52" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#fde047"/>
-                                <stop offset="0.5" stop-color="#f59e0b"/>
-                                <stop offset="1" stop-color="#ea580c"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <div>
-                    <div class="flex items-center space-x-1.5">
-                        <h1 class="font-extrabold text-base leading-none text-amber-400 tracking-wide">KAAB RIDER</h1>
-                        <span class="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold px-1.5 py-0.2 rounded-full">v4.0 PRO</span>
-                    </div>
-                    <p class="text-[11px] text-slate-400 font-light mt-0.5">ระบบบันทึกไว 3 วินาที สำหรับไรเดอร์</p>
-                </div>
+                <img class="brand-logo" src="icon-192.png?v=44" alt="โลโก้เป็ดอ้วนหน้าหงุดหงิด KAAB RIDER PRO" width="46" height="46">
+                <div><h1 class="brand-name">KAAB RIDER <span class="text-white">PRO</span></h1><p class="brand-sub">RIDER LOG · v4.4</p></div>
             </div>
 
             <!-- Action Buttons: Sunlight Mode & Export -->
             <div class="flex items-center space-x-1.5">
-                <button onclick="toggleSunlightMode()" id="sunlightBtn" title="โหมดสู้แดด" class="px-2.5 py-1.5 bg-slate-800/90 hover:bg-slate-700 border border-slate-700 active:scale-95 rounded-xl transition flex items-center space-x-1 text-xs text-amber-300">
+                <button id="installBtn" onclick="installKaab()" title="ติดตั้งแอป" aria-label="ติดตั้งแอป" class="px-2 rounded-xl bg-slate-800 border border-slate-700 text-amber-300"><i class="fa-solid fa-mobile-screen-button"></i></button>
+                <button aria-label="โหมดสู้แดด" onclick="toggleSunlightMode()" id="sunlightBtn" title="โหมดสู้แดด" class="px-2.5 py-1.5 bg-slate-800/90 hover:bg-slate-700 border border-slate-700 active:scale-95 rounded-xl transition flex items-center space-x-1 text-xs text-amber-300">
                     <i class="fa-solid fa-sun"></i>
                     <span class="hidden xs:inline">สู้แดด</span>
                 </button>
@@ -293,7 +275,7 @@
                 <div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
                     <span class="font-bold text-slate-200 text-xs flex items-center gap-1.5">
                         <span class="w-2 h-4 bg-sky-500 rounded-full inline-block"></span>
-                        บันทึกงานด่วน (จำค่ายล่าสุดอัตโนมัติ)
+                        บันทึกงานด่วน (จำแอปล่าสุดอัตโนมัติ)
                     </span>
                     <div class="flex items-center space-x-1">
                         <input type="date" id="tripDate" required class="bg-slate-950 border border-slate-800 text-slate-300 rounded-lg px-1.5 py-0.5 text-[10px] font-mono w-24">
@@ -339,16 +321,16 @@
                         <label class="text-xs text-slate-300 font-semibold">2. ค่ารอบสุทธิ (บาท)</label>
                         <button type="button" onclick="document.getElementById('tripFare').value = ''" class="text-[10px] text-rose-400 hover:underline">ล้างตัวเลข</button>
                     </div>
-                    <input type="number" step="0.01" id="tripFare" inputmode="decimal" placeholder="0.00" required class="w-full bg-slate-900 border-2 border-sky-500/40 text-sky-400 rounded-xl px-3 py-2.5 text-2xl font-black text-center focus:ring-2 focus:ring-sky-500 focus:outline-none font-mono">
+                    <input type="number" min="0" step="0.01" id="tripFare" inputmode="decimal" placeholder="0.00" required class="w-full bg-slate-900 border-2 border-sky-500/40 text-sky-400 rounded-xl px-3 py-2.5 text-2xl font-black text-center focus:ring-2 focus:ring-sky-500 focus:outline-none font-mono">
                     
                     <!-- Big Thumb Chips: Set or Add -->
                     <div class="grid grid-cols-6 gap-1 pt-0.5">
-                        <button type="button" onclick="quickSetFare(35)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">35</button>
-                        <button type="button" onclick="quickSetFare(45)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">45</button>
-                        <button type="button" onclick="quickSetFare(60)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">60</button>
-                        <button type="button" onclick="quickSetFare(80)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">80</button>
+                        <button type="button" onclick="quickSetFare(18)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">18</button>
+                        <button type="button" onclick="quickSetFare(21)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">21</button>
+                        <button type="button" onclick="quickSetFare(31)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">31</button>
+                        <button type="button" onclick="quickSetFare(50)" class="py-1.5 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-200 font-bold text-xs rounded-lg border border-slate-700">50</button>
+                        <button type="button" onclick="quickAddFareDelta(1)" class="py-1.5 bg-sky-950 hover:bg-sky-900 active:scale-95 text-sky-300 font-extrabold text-xs rounded-lg border border-sky-700">+1</button>
                         <button type="button" onclick="quickAddFareDelta(5)" class="py-1.5 bg-sky-950 hover:bg-sky-900 active:scale-95 text-sky-300 font-extrabold text-xs rounded-lg border border-sky-700">+5</button>
-                        <button type="button" onclick="quickAddFareDelta(10)" class="py-1.5 bg-sky-950 hover:bg-sky-900 active:scale-95 text-sky-300 font-extrabold text-xs rounded-lg border border-sky-700">+10</button>
                     </div>
                 </div>
 
@@ -359,9 +341,9 @@
                         <label class="block text-[11px] text-slate-400 font-medium mb-1">ช่องทางรับเงิน</label>
                         <input type="hidden" id="tripPaymentType" value="wallet">
                         <div class="grid grid-cols-3 gap-1" id="paymentGridSelector">
-                            <button type="button" onclick="selectPaymentTile('wallet')" data-pay="wallet" class="pay-tile py-2 rounded-xl text-[11px] font-bold border border-purple-400 bg-purple-600 text-white transition">💼 แอป</button>
                             <button type="button" onclick="selectPaymentTile('cash')" data-pay="cash" class="pay-tile py-2 rounded-xl text-[11px] font-medium border border-slate-800 bg-slate-950 text-slate-400 transition">💵 สด</button>
                             <button type="button" onclick="selectPaymentTile('transfer')" data-pay="transfer" class="pay-tile py-2 rounded-xl text-[11px] font-medium border border-slate-800 bg-slate-950 text-slate-400 transition">📱 โอน</button>
+                            <button type="button" onclick="selectPaymentTile('wallet')" data-pay="wallet" class="pay-tile py-2 rounded-xl text-[11px] font-bold border border-purple-400 bg-purple-600 text-white transition">💼 แอป</button>
                         </div>
                     </div>
 
@@ -389,23 +371,26 @@
                 <div class="grid grid-cols-2 gap-2.5">
                     <div>
                         <div class="flex justify-between items-center mb-1">
-                            <label class="text-[11px] text-slate-400 font-medium">🎁 ทิปพิเศษ (บาท)</label>
+                            <label class="text-[11px] text-slate-400 font-medium">🎁 ทิปพิเศษ</label>
                             <div class="flex space-x-1">
+                                <button type="button" onclick="quickAddTip(1)" class="text-[10px] bg-amber-950/80 text-amber-300 px-1.5 py-0.2 rounded border border-amber-700/50 font-bold">+1</button>
+                                <button type="button" onclick="quickAddTip(5)" class="text-[10px] bg-amber-950/80 text-amber-300 px-1.5 py-0.2 rounded border border-amber-700/50 font-bold">+5</button>
                                 <button type="button" onclick="quickAddTip(10)" class="text-[10px] bg-amber-950/80 text-amber-300 px-1.5 py-0.2 rounded border border-amber-700/50 font-bold">+10</button>
-                                <button type="button" onclick="quickAddTip(20)" class="text-[10px] bg-amber-950/80 text-amber-300 px-1.5 py-0.2 rounded border border-amber-700/50 font-bold">+20</button>
                             </div>
                         </div>
-                        <input type="number" step="0.01" id="tripTip" inputmode="decimal" placeholder="0" value="0" class="w-full bg-slate-950 border border-slate-800 text-amber-300 rounded-xl px-3 py-2 text-sm font-bold font-mono focus:ring-1 focus:ring-amber-500 focus:outline-none">
+                        <input type="number" min="0" step="0.01" id="tripTip" inputmode="decimal" placeholder="0" value="0" class="w-full bg-slate-950 border border-slate-800 text-amber-300 rounded-xl px-3 py-2 text-sm font-bold font-mono focus:ring-1 focus:ring-amber-500 focus:outline-none">
                     </div>
                     <div>
                         <div class="flex justify-between items-center mb-1">
                             <label class="text-[11px] text-slate-400 font-medium">🛣️ ระยะทาง (กม.)</label>
                             <div class="flex space-x-1">
-                                <button type="button" onclick="quickSetDist(3)" class="text-[10px] bg-slate-800 text-slate-300 px-1.5 py-0.2 rounded border border-slate-700">3กม.</button>
-                                <button type="button" onclick="quickSetDist(5)" class="text-[10px] bg-slate-800 text-slate-300 px-1.5 py-0.2 rounded border border-slate-700">5กม.</button>
+                                <button type="button" onclick="quickSetDist(1)" class="text-[10px] bg-slate-800 text-slate-300 px-1.5 py-0.2 rounded border border-slate-700">1กม.</button>
+                                <button type="button" onclick="quickSetDist(2)" class="text-[10px] bg-slate-800 text-slate-300 px-1.5 py-0.2 rounded border border-slate-700">2กม.</button>
+
+
                             </div>
                         </div>
-                        <input type="number" step="0.1" id="tripDistance" inputmode="decimal" oninput="calculateTripFuelEst()" placeholder="0.0" class="w-full bg-slate-950 border border-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm font-mono focus:ring-1 focus:ring-sky-500 focus:outline-none">
+                        <input type="number" min="0" step="0.1" id="tripDistance" inputmode="decimal" oninput="calculateTripFuelEst()" placeholder="0.0" class="w-full bg-slate-950 border border-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm font-mono focus:ring-1 focus:ring-sky-500 focus:outline-none">
                     </div>
                 </div>
 
@@ -470,7 +455,7 @@
                 <!-- Expense Amount + Quick Buttons -->
                 <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800 space-y-2">
                     <label class="block text-xs text-slate-300 font-semibold">จำนวนเงิน (บาท)</label>
-                    <input type="number" step="0.01" id="expAmount" inputmode="decimal" placeholder="0.00" required class="w-full bg-slate-900 border-2 border-rose-500/40 text-rose-400 rounded-xl px-3 py-2 text-2xl font-black text-center font-mono focus:ring-2 focus:ring-rose-500 focus:outline-none">
+                    <input type="number" min="0" step="0.01" id="expAmount" inputmode="decimal" placeholder="0.00" required class="w-full bg-slate-900 border-2 border-rose-500/40 text-rose-400 rounded-xl px-3 py-2 text-2xl font-black text-center font-mono focus:ring-2 focus:ring-rose-500 focus:outline-none">
                     <div class="grid grid-cols-5 gap-1">
                         <button type="button" onclick="quickAddExp(40)" class="py-1.5 bg-slate-800 text-rose-300 font-bold text-xs rounded-lg border border-slate-700">40</button>
                         <button type="button" onclick="quickAddExp(60)" class="py-1.5 bg-slate-800 text-rose-300 font-bold text-xs rounded-lg border border-slate-700">60</button>
@@ -549,7 +534,7 @@
             <!-- Backup & Data Management -->
             <div class="glass-card rounded-2xl p-4 shadow-xl space-y-3">
                 <h4 class="font-bold text-slate-200 text-xs flex items-center gap-2 border-b border-slate-800 pb-2">
-                    <i class="fa-solid fa-database text-slate-400"></i> สำรองข้อมูล & จัดการระบบ
+                    <i class="fa-solid fa-database text-slate-400"></i> ส่งออกรายงาน & จัดการระบบ
                 </h4>
                 <div class="grid grid-cols-2 gap-2">
                     <button onclick="exportCSV()" class="p-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-medium flex items-center justify-center space-x-1.5 border border-slate-700">
@@ -560,17 +545,6 @@
                         <i class="fa-solid fa-file-excel text-emerald-400"></i>
                         <span>ส่งออก Sheets</span>
                     </button>
-                </div>
-                <div class="grid grid-cols-2 gap-2 pt-1 border-t border-slate-800">
-                    <button onclick="backupJSON()" class="p-2.5 bg-indigo-950/60 hover:bg-indigo-900/60 text-indigo-300 rounded-xl text-xs font-medium flex items-center justify-center space-x-1.5 border border-indigo-500/30">
-                        <i class="fa-solid fa-file-export text-indigo-400"></i>
-                        <span>Backup JSON</span>
-                    </button>
-                    <label class="p-2.5 bg-purple-950/60 hover:bg-purple-900/60 text-purple-300 rounded-xl text-xs font-medium flex items-center justify-center space-x-1.5 border border-purple-500/30 cursor-pointer">
-                        <i class="fa-solid fa-file-import text-purple-400"></i>
-                        <span>Restore JSON</span>
-                        <input type="file" id="restoreFile" accept=".json" onchange="restoreJSON(event)" class="hidden">
-                    </label>
                 </div>
                 <div class="grid grid-cols-2 gap-2 pt-1">
                     <button onclick="loadDemoData()" class="p-2.5 bg-sky-950/60 hover:bg-sky-900/60 text-sky-300 rounded-xl text-xs font-medium flex items-center justify-center space-x-1.5 border border-sky-500/30">
@@ -583,6 +557,60 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Backup and device migration inside the Stats tab -->
+            <section id="stats-backup" class="space-y-3" aria-labelledby="statsBackupTitle">
+                <div class="transfer-card space-y-3">
+                    <div class="transfer-kicker"><i class="fa-solid fa-shield-halved"></i> BACKUP & RESTORE</div>
+                    <h2 id="statsBackupTitle" class="transfer-title">สำรองข้อมูล / นำเข้า–ส่งออก</h2>
+                    <p class="transfer-caption">ส่งออกประวัติทั้งหมดและการตั้งค่าของ KAAB RIDER PRO เป็นไฟล์เดียว แล้วนำเข้าที่เครื่องใหม่ได้ ไม่ต้องสมัครบัญชี</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="transfer-metric"><small>งานวิ่งทั้งหมด</small><b id="transferTripCount">0 รายการ</b></div>
+                        <div class="transfer-metric"><small>รายจ่ายทั้งหมด</small><b id="transferExpenseCount">0 รายการ</b></div>
+                        <div class="transfer-metric"><small>รายรับสะสม</small><b id="transferIncome">฿0</b></div>
+                        <div class="transfer-metric"><small>รายจ่ายสะสม</small><b id="transferExpenseTotal">฿0</b></div>
+                    </div>
+                    <p class="transfer-caption" id="transferLastExport">ยังไม่เคยสร้างไฟล์สำรองในเวอร์ชันนี้</p>
+                </div>
+                <div class="transfer-card space-y-3">
+                    <div class="transfer-kicker">01 / เครื่องเก่า</div>
+                    <h3 class="transfer-title">ส่งออกข้อมูล</h3>
+                    <p class="transfer-caption">รวมงานวิ่ง รายรับ ทิป ค่าใช้จ่าย ระยะทาง เป้าหมายรายวัน และการตั้งค่า ไม่จำกัดช่วงวันที่ที่เลือกบนแดชบอร์ด</p>
+                    <div class="transfer-actions">
+                        <button type="button" onclick="backupJSON()" class="transfer-btn transfer-primary"><i class="fa-solid fa-download"></i> ดาวน์โหลดไฟล์สำรอง JSON</button>
+                        <button type="button" id="shareBackupBtn" onclick="shareBackup()" class="transfer-btn"><i class="fa-solid fa-share-nodes"></i> แชร์ไฟล์ไปยังเครื่องใหม่</button>
+                    </div>
+                    <p class="transfer-caption">เก็บไฟล์ใน Files, Google Drive หรือ iCloud Drive ของคุณ ไฟล์มีข้อมูลรายรับและหมายเหตุ ควรเก็บเป็นส่วนตัว</p>
+                </div>
+                <div class="transfer-card space-y-3">
+                    <div class="transfer-kicker">02 / เครื่องใหม่</div>
+                    <h3 class="transfer-title">นำเข้าข้อมูล</h3>
+                    <p class="transfer-caption">เลือกไฟล์ Backup JSON จากเครื่องเก่า ระบบจะแสดงตัวอย่างก่อนบันทึก รองรับไฟล์สำรอง KAAB v4.0–v4.4</p>
+                    <input type="file" id="restoreFile" accept=".json,application/json" class="sr-only" onchange="restoreJSON(event)">
+                    <button type="button" onclick="document.getElementById('restoreFile').click()" class="transfer-btn transfer-import"><i class="fa-solid fa-file-import"></i> เลือกไฟล์สำรอง</button>
+                    <div id="transferStatus" class="transfer-status" role="status" aria-live="polite"></div>
+                    <div id="importPreview" class="transfer-hidden space-y-3">
+                        <div class="transfer-metric"><small>ไฟล์ที่เลือก</small><b id="importFileName" class="transfer-file" style="font-size:13px"></b><small id="importFileMeta"></small></div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="transfer-metric"><small>งานวิ่งที่จะนำเข้า</small><b id="importTripCount"></b></div>
+                            <div class="transfer-metric"><small>รายจ่ายที่จะนำเข้า</small><b id="importExpenseCount"></b></div>
+                            <div class="transfer-metric"><small>รายรับสะสม</small><b id="importIncome"></b></div>
+                            <div class="transfer-metric"><small>รายจ่ายสะสม</small><b id="importExpenseTotal"></b></div>
+                        </div>
+                        <p id="importSettingsInfo" class="transfer-caption"></p>
+                        <div id="importWarning" class="transfer-notice">การนำเข้าจะแทนที่ข้อมูลในเครื่องนี้ ไม่ใช่การรวมรายการ</div>
+                        <button id="beforeImportBackup" type="button" onclick="backupJSON()" class="transfer-btn"><i class="fa-solid fa-shield-halved"></i> สำรองข้อมูลเครื่องนี้ก่อน</button>
+                        <label class="transfer-check"><input type="checkbox" id="importConfirm" onchange="document.getElementById('applyImportBtn').disabled=!this.checked"> <span>ยืนยันว่าจะใช้ข้อมูลจากไฟล์แทนข้อมูลปัจจุบัน</span></label>
+                        <button type="button" id="applyImportBtn" disabled onclick="applyImport()" class="transfer-btn transfer-primary"><i class="fa-solid fa-check"></i> ยืนยันนำเข้าข้อมูล</button>
+                        <button type="button" onclick="cancelImport()" class="transfer-btn">ยกเลิก / เลือกไฟล์อื่น</button>
+                    </div>
+                </div>
+                <div class="transfer-card space-y-2">
+                    <h3 class="font-bold text-slate-100 text-sm"><i class="fa-solid fa-circle-info text-sky-400"></i> วิธีเปลี่ยนเครื่อง</h3>
+                    <ol class="transfer-steps"><li>เครื่องเก่า: ดาวน์โหลดหรือแชร์ไฟล์ JSON</li><li>ส่งไฟล์ไปเครื่องใหม่ผ่านช่องทางส่วนตัว</li><li>เปิดเว็บแอปเครื่องใหม่ → สถิติ → สำรองข้อมูล / นำเข้า–ส่งออก → เลือกไฟล์สำรอง</li><li>ตรวจสอบยอดและยืนยัน แล้วตรวจประวัติอีกครั้ง</li></ol>
+                    <p class="transfer-caption">CSV สำหรับ Excel/Sheets ไม่ใช่ไฟล์กู้คืน แอปยังบันทึกข้อมูลในเครื่อง ไม่มีการซิงก์คลาวด์อัตโนมัติ</p>
+                </div>
+            </section>
         </div>
 
     </main>
@@ -600,7 +628,7 @@
             </button>
             <button onclick="switchTab('stats')" id="bottom-nav-stats" class="flex flex-col items-center justify-center py-1 text-slate-400 transition">
                 <i class="fa-solid fa-chart-pie text-lg mb-0.5"></i>
-                <span class="text-[11px]">สถิติ & สำรอง</span>
+                <span class="text-[11px]">สถิติ</span>
             </button>
         </div>
     </nav>
@@ -617,7 +645,7 @@
             <h3 class="font-bold text-slate-100 text-sm flex items-center gap-2">
                 <i class="fa-solid fa-bullseye text-amber-400"></i> ตั้งเป้าหมายกำไรสุทธิต่อวัน
             </h3>
-            <input type="number" id="dailyGoalInput" placeholder="1000" class="w-full bg-slate-950 border border-slate-700 text-amber-300 text-xl font-bold text-center rounded-xl p-2.5 font-mono">
+            <input type="number" min="0" id="dailyGoalInput" placeholder="1000" class="w-full bg-slate-950 border border-slate-700 text-amber-300 text-xl font-bold text-center rounded-xl p-2.5 font-mono">
             <div class="grid grid-cols-3 gap-1.5 text-xs">
                 <button type="button" onclick="document.getElementById('dailyGoalInput').value = 600" class="py-1.5 bg-slate-800 rounded-lg text-slate-300">฿600</button>
                 <button type="button" onclick="document.getElementById('dailyGoalInput').value = 1000" class="py-1.5 bg-slate-800 rounded-lg text-slate-300">฿1,000</button>
@@ -701,15 +729,15 @@
                     <div class="grid grid-cols-3 gap-2">
                         <div>
                             <label class="block text-[11px] text-slate-400 mb-1">ค่ารอบ (฿)</label>
-                            <input type="number" step="0.01" id="editTripFare" class="w-full bg-slate-950 border border-slate-800 text-sky-400 font-bold rounded-xl px-2.5 py-1.5 text-xs">
+                            <input type="number" min="0" step="0.01" id="editTripFare" class="w-full bg-slate-950 border border-slate-800 text-sky-400 font-bold rounded-xl px-2.5 py-1.5 text-xs">
                         </div>
                         <div>
                             <label class="block text-[11px] text-slate-400 mb-1">ทิป (฿)</label>
-                            <input type="number" step="0.01" id="editTripTip" class="w-full bg-slate-950 border border-slate-800 text-amber-300 font-semibold rounded-xl px-2.5 py-1.5 text-xs">
+                            <input type="number" min="0" step="0.01" id="editTripTip" class="w-full bg-slate-950 border border-slate-800 text-amber-300 font-semibold rounded-xl px-2.5 py-1.5 text-xs">
                         </div>
                         <div>
                             <label class="block text-[11px] text-slate-400 mb-1">ระยะ (กม.)</label>
-                            <input type="number" step="0.1" id="editTripDistance" class="w-full bg-slate-950 border border-slate-800 text-slate-200 font-mono rounded-xl px-2.5 py-1.5 text-xs">
+                            <input type="number" min="0" step="0.1" id="editTripDistance" class="w-full bg-slate-950 border border-slate-800 text-slate-200 font-mono rounded-xl px-2.5 py-1.5 text-xs">
                         </div>
                     </div>
 
@@ -736,7 +764,7 @@
                     </div>
                     <div>
                         <label class="block text-[11px] text-slate-400 mb-1">จำนวนเงิน (บาท)</label>
-                        <input type="number" step="0.01" id="editExpAmount" class="w-full bg-slate-950 border border-slate-800 text-rose-400 font-bold rounded-xl px-2.5 py-1.5 text-sm">
+                        <input type="number" min="0" step="0.01" id="editExpAmount" class="w-full bg-slate-950 border border-slate-800 text-rose-400 font-bold rounded-xl px-2.5 py-1.5 text-sm">
                     </div>
                 </div>
 
@@ -783,9 +811,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             if (isSunlightMode) document.body.classList.add('sunlight-mode');
             resetFormDatesToRealtime();
-            if (trips.length === 0 && expenses.length === 0) {
-                generateDemoData();
-            }
+
             // Restore Smart Memory selections
             selectAppTile(lastUsedApp);
             selectPaymentTile(lastUsedPay);
@@ -1048,6 +1074,7 @@
         }
 
         function loadDemoData() {
+            if ((trips.length || expenses.length) && !confirm("ข้อมูลตัวอย่างจะแทนที่ข้อมูลเดิมทั้งหมด ต้องการดำเนินการหรือไม่?")) return;
             generateDemoData();
             showToast('โหลดข้อมูลตัวอย่างเรียบร้อย', 'fa-circle-check text-emerald-400');
             renderDashboard();
@@ -1175,11 +1202,13 @@
 
             // Daily Goal Progress
             document.getElementById('goalTargetText').innerText = `฿${dailyGoal.toLocaleString()}`;
-            const goalPct = Math.max(0, Math.min(100, Math.round((netProfit / dailyGoal) * 100)));
+            const today = getRealtimeDateString();
+            const todayNet = trips.filter(t=>t.date===today).reduce((a,t)=>a+t.total,0)-expenses.filter(e=>e.date===today).reduce((a,e)=>a+e.amount,0);
+            const goalPct = Math.max(0, Math.min(100, Math.round((todayNet / dailyGoal) * 100)));
             document.getElementById('goalProgressBar').style.width = `${goalPct}%`;
-            document.getElementById('goalStatusText').innerText = netProfit >= dailyGoal
+            document.getElementById('goalStatusText').innerText = todayNet >= dailyGoal
                 ? `🎉 ทะลุเป้าแล้ว! (${goalPct}%)`
-                : `อีก ฿${Math.max(0, dailyGoal - netProfit).toLocaleString()} ถึงเป้า (${goalPct}%)`;
+                : `อีก ฿${Math.max(0, dailyGoal - todayNet).toLocaleString()} ถึงเป้า (${goalPct}%)`;
 
             // Oil Maintenance Traffic Light
             const avgFuelPerKm = totalDistance > 0 ? (fuelExpense / totalDistance) : 0;
@@ -1191,7 +1220,8 @@
             oilBar.className = oilPct >= 90 ? 'bg-rose-500 h-full transition-all' : (oilPct >= 75 ? 'bg-amber-400 h-full transition-all' : 'bg-emerald-500 h-full transition-all');
 
             renderHistoryList(filteredTrips, filteredExpenses);
-            renderCharts(filteredTrips, filteredExpenses);
+            renderTransferSummary();
+            if (typeof Chart !== 'undefined') renderCharts(filteredTrips, filteredExpenses);
         }
 
         function filterHistoryType(type) {
@@ -1250,7 +1280,7 @@
                                 <span class="text-[10px] bg-slate-800 text-slate-300 px-1.5 py-0.5 rounded">${payLabel}</span>
                                 ${item.tip > 0 ? `<span class="text-[10px] bg-amber-950 text-amber-300 border border-amber-500/30 px-1.5 py-0.5 rounded">+ทิป ฿${item.tip}</span>` : ''}
                             </div>
-                            <p class="text-xs text-slate-400">${item.note || 'งานวิ่งทั่วไป'} ${item.distance > 0 ? `<span class="font-mono text-slate-500">(${item.distance} กม.)</span>` : ''}</p>
+                            <p class="text-xs text-slate-400">${escapeHTML(item.note || 'งานวิ่งทั่วไป')} ${item.distance > 0 ? `<span class="font-mono text-slate-500">(${item.distance} กม.)</span>` : ''}</p>
                         </div>
                         <div class="text-right flex items-center space-x-1.5 shrink-0">
                             <div class="mr-1">
@@ -1268,7 +1298,7 @@
                                 <span class="text-xs font-bold text-rose-400">⛽ ${item.category}</span>
                                 ${timeBadge}
                             </div>
-                            <p class="text-xs text-slate-400">${item.note || 'รายจ่ายทั่วไป'}</p>
+                            <p class="text-xs text-slate-400">${escapeHTML(item.note || 'รายจ่ายทั่วไป')}</p>
                         </div>
                         <div class="text-right flex items-center space-x-1.5 shrink-0">
                             <div class="mr-1">
@@ -1367,6 +1397,7 @@
         }
 
         function deleteItem(type, id) {
+            if (!confirm("ลบรายการนี้หรือไม่?")) return;
             if (type === 'trip') {
                 trips = trips.filter(t => t.id !== id);
                 localStorage.setItem('rider_trips', JSON.stringify(trips));
@@ -1379,6 +1410,7 @@
         }
 
         function renderCharts(filteredTrips, filteredExpenses) {
+            if (typeof Chart === "undefined") return;
             const hourlyIncome = Array(24).fill(0);
             filteredTrips.forEach(t => {
                 if (t.time) {
@@ -1461,9 +1493,12 @@
             ['add', 'history', 'stats'].forEach(tab => {
                 document.getElementById(`tab-${tab}`).classList.add('hidden');
                 document.getElementById(`bottom-nav-${tab}`).classList.remove('bottom-nav-active');
+                document.getElementById(`bottom-nav-${tab}`).removeAttribute('aria-current');
             });
             document.getElementById(`tab-${tabName}`).classList.remove('hidden');
             document.getElementById(`bottom-nav-${tabName}`).classList.add('bottom-nav-active');
+            document.getElementById(`bottom-nav-${tabName}`).setAttribute('aria-current','page');
+            if(tabName === 'stats') renderTransferSummary();
         }
 
         function toggleFormType(type) {
@@ -1493,42 +1528,159 @@
             setTimeout(() => toast.classList.add('opacity-0'), 2500);
         }
 
-        function backupJSON() {
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify({
-                version: '4.0', exportDate: new Date().toISOString(),
-                trips, expenses, oilKm: accumulatedKm, dailyGoal
-            }, null, 2));
-            const a = document.createElement('a');
-            a.href = dataStr;
-            a.download = `KAAB_Rider_Backup_${getRealtimeDateString()}.json`;
-            a.click();
-            showToast('สำรองไฟล์ JSON สำเร็จ!', 'fa-circle-check text-emerald-400');
+        // Full device migration. Old v4.0 backups are supported, without missing settings.
+        const BACKUP_FORMAT = 'kaab-rider-backup';
+        const BACKUP_KEYS = ['rider_trips','rider_expenses','rider_oil_km','rider_daily_goal','rider_last_app','rider_last_pay','rider_sunlight'];
+        const BACKUP_APPS = ['Grab','LINE MAN','ShopeeFood','MAXIM','Robinhood','Other'];
+        const BACKUP_PAYS = ['wallet','cash','transfer'];
+        const BACKUP_CATEGORIES = ['น้ำมัน','อาหาร/เครื่องดื่ม','เติมเครดิตแอป','ซ่อมบำรุงรถ','อื่นๆ'];
+        let pendingImport = null;
+        let importReadToken = 0;
+        function escapeHTML(value) { return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+        const transferMoney = n => '฿' + n.toLocaleString('th-TH',{maximumFractionDigits:2,minimumFractionDigits:2});
+        const putText = (id,text) => { document.getElementById(id).textContent = text; };
+        function renderTransferSummary() {
+            putText('transferTripCount',trips.length.toLocaleString('th-TH')+' รายการ');
+            putText('transferExpenseCount',expenses.length.toLocaleString('th-TH')+' รายการ');
+            putText('transferIncome',transferMoney(trips.reduce((n,t)=>n+t.total,0)));
+            putText('transferExpenseTotal',transferMoney(expenses.reduce((n,e)=>n+e.amount,0)));
+            const last = localStorage.getItem('rider_last_backup_at');
+            putText('transferLastExport',last && Number.isFinite(Date.parse(last)) ? 'สร้างไฟล์สำรองล่าสุด: '+new Date(last).toLocaleString('th-TH') : 'ยังไม่เคยสร้างไฟล์สำรองในเวอร์ชันนี้');
         }
-
-        function restoreJSON(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    const data = JSON.parse(e.target.result);
-                    if (data.trips && data.expenses) {
-                        trips = data.trips;
-                        expenses = data.expenses;
-                        accumulatedKm = data.oilKm || 0;
-                        dailyGoal = data.dailyGoal || 1000;
-                        localStorage.setItem('rider_trips', JSON.stringify(trips));
-                        localStorage.setItem('rider_expenses', JSON.stringify(expenses));
-                        localStorage.setItem('rider_oil_km', accumulatedKm.toString());
-                        localStorage.setItem('rider_daily_goal', dailyGoal.toString());
-                        showToast('กู้คืนข้อมูลสำเร็จ!', 'fa-circle-check text-emerald-400');
-                        renderDashboard();
-                    }
-                } catch (err) {
-                    showToast('ไฟล์ JSON ไม่ถูกต้อง', 'fa-circle-exclamation text-rose-400');
-                }
+        function makeBackup() {
+            return {format:BACKUP_FORMAT,schemaVersion:1,version:'4.4',exportDate:new Date().toISOString(),trips,expenses,oilKm:accumulatedKm,dailyGoal,lastUsedApp,lastUsedPay,isSunlightMode};
+        }
+        function makeBackupFile() {
+            const name='KAAB_Rider_Backup_'+getRealtimeDateString()+'_'+getRealtimeTimeString().replace(':','')+'_'+Date.now().toString().slice(-6)+'.json';
+            return new File([JSON.stringify(makeBackup(),null,2)],name,{type:'application/json'});
+        }
+        function noteBackupCreated() {
+            try { localStorage.setItem('rider_last_backup_at',new Date().toISOString()); } catch(e) { console.warn(e); }
+            renderTransferSummary();
+        }
+        function downloadBackupFile(file) {
+            const url=URL.createObjectURL(file);
+            const a=document.createElement('a'); a.href=url; a.download=file.name;
+            document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),60000);
+            noteBackupCreated();
+            showToast('สร้างไฟล์ JSON แล้ว กรุณาตรวจสอบในโฟลเดอร์ดาวน์โหลด','fa-download text-emerald-400');
+        }
+        function backupJSON() {
+            try { downloadBackupFile(makeBackupFile()); }
+            catch(e) { showToast('สร้างไฟล์ไม่สำเร็จ กรุณาลองอีกครั้ง','fa-circle-exclamation text-rose-400'); }
+        }
+        async function shareBackup() {
+            try {
+                const file=makeBackupFile();
+                if(!navigator.share || !navigator.canShare || !navigator.canShare({files:[file]})) { downloadBackupFile(file); return; }
+                await navigator.share({files:[file],title:'KAAB RIDER PRO Backup'});
+                noteBackupCreated(); showToast('ส่งไฟล์ให้ระบบแชร์แล้ว กรุณาตรวจสอบปลายทาง','fa-share-nodes text-emerald-400');
+            } catch(e) { if(e.name!=='AbortError') showToast('แชร์ไฟล์ไม่ได้ ให้ใช้ปุ่มดาวน์โหลด JSON','fa-circle-exclamation text-amber-400'); }
+        }
+        function parseBackup(data) {
+            const fail = msg => { throw new Error(msg); };
+            const plain = x => x!==null && typeof x==='object' && !Array.isArray(x);
+            if(!plain(data) || !Array.isArray(data.trips) || !Array.isArray(data.expenses)) fail('ไฟล์นี้ไม่ใช่ไฟล์สำรอง KAAB RIDER PRO');
+            if(data.format===BACKUP_FORMAT) { if(data.schemaVersion!==1) fail('เวอร์ชันไฟล์นี้ยังไม่รองรับ'); }
+            else if(data.format!==undefined || !['4.0','4.1','4.2','4.3','4.4'].includes(String(data.version))) fail('ไม่รองรับรูปแบบไฟล์นี้');
+            const number = (value,label,minimum=-Number.MAX_SAFE_INTEGER) => {
+                if(typeof value!=='number' || !Number.isFinite(value) || value<minimum || Math.abs(value)>Number.MAX_SAFE_INTEGER) fail(label+' ไม่ถูกต้อง'); return value;
             };
-            reader.readAsText(file);
+            const text = (value,label) => { if(typeof value!=='string') fail(label+' ไม่ถูกต้อง'); return value; };
+            const option = (value,values,label) => { if(!values.includes(value)) fail(label+' ไม่ถูกต้อง'); return value; };
+            function base(row,ids,label) {
+                if(!plain(row)) fail(label+' ไม่ถูกต้อง');
+                if(typeof row.id!=='string'||!/^[A-Za-z0-9_-]{1,100}$/.test(row.id)||ids.has(row.id)) fail(label+' มีรหัสไม่ถูกต้องหรือซ้ำ'); ids.add(row.id);
+                if(typeof row.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(row.date)) fail(label+' วันที่ไม่ถูกต้อง');
+                const parsedDate = new Date(row.date+'T00:00:00Z');
+                if(!Number.isFinite(parsedDate.getTime())||parsedDate.toISOString().slice(0,10)!==row.date) fail(label+' วันที่ไม่ถูกต้อง');
+                const time=row.time||'00:00';
+                if(typeof time!=='string'||!/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(time)) fail(label+' เวลาไม่ถูกต้อง');
+                const createdAt=row.createdAt || row.date+'T'+time+':00+07:00';
+                if(typeof createdAt!=='string'||!Number.isFinite(Date.parse(createdAt))) fail(label+' เวลาสร้างไม่ถูกต้อง');
+                return {id:row.id,date:row.date,time,note:text(row.note??'',label+' หมายเหตุ'),createdAt};
+            }
+            const tripIds=new Set(),expenseIds=new Set();
+            const validTrips=data.trips.map((row,i)=>{
+                const label='งานวิ่งรายการที่ '+(i+1),common=base(row,tripIds,label);
+                const fare=number(row.fare,label+' ค่ารอบ'),tip=number(row.tip??0,label+' ทิป');
+                const batchCount=number(row.batchCount??1,label+' จำนวนงาน',1);
+                if(!Number.isInteger(batchCount)) fail(label+' จำนวนงานไม่ถูกต้อง');
+                const total=number(row.total??fare+tip,label+' ยอดรวม');
+                if(Math.abs(total-(fare+tip))>0.000001) fail(label+' ยอดรวมไม่ตรงกับค่ารอบและทิป');
+                return {...common,app:option(row.app,BACKUP_APPS,label+' แอป'),batchCount,fare,tip,total,paymentType:option(row.paymentType||'wallet',BACKUP_PAYS,label+' ช่องทางรับเงิน'),distance:number(row.distance??0,label+' ระยะทาง')};
+            });
+            const validExpenses=data.expenses.map((row,i)=>{
+                const label='รายจ่ายรายการที่ '+(i+1),common=base(row,expenseIds,label);
+                return {...common,category:option(row.category,BACKUP_CATEGORIES,label+' หมวดหมู่'),amount:number(row.amount,label+' จำนวนเงิน')};
+            });
+            const oilKm=number(data.oilKm??0,'ระยะน้ำมันเครื่อง',0);
+            const goal=number(data.dailyGoal??1000,'เป้าหมายรายวัน',0.01);
+            const hasSettings=['lastUsedApp','lastUsedPay','isSunlightMode'].every(k=>Object.hasOwn(data,k));
+            if(data.format===BACKUP_FORMAT && !hasSettings) fail('ไฟล์สำรองไม่สมบูรณ์: การตั้งค่าหายไป');
+            if(data.isSunlightMode!==undefined&&typeof data.isSunlightMode!=='boolean') fail('การตั้งค่าโหมดสู้แดดไม่ถูกต้อง');
+            return {trips:validTrips,expenses:validExpenses,oilKm,dailyGoal:goal,hasSettings,
+                lastUsedApp:data.lastUsedApp===undefined?null:option(data.lastUsedApp,BACKUP_APPS,'แอปล่าสุด'),
+                lastUsedPay:data.lastUsedPay===undefined?null:option(data.lastUsedPay,BACKUP_PAYS,'ช่องทางรับเงินล่าสุด'),
+                isSunlightMode:data.isSunlightMode??null,
+                exportDate:typeof data.exportDate==='string'&&Number.isFinite(Date.parse(data.exportDate))?data.exportDate:null,version:String(data.version||'4.4')};
+        }
+        function importStatus(message='',kind='') {
+            const el=document.getElementById('transferStatus'); el.textContent=message;
+            el.className='transfer-status'+(kind?' transfer-'+kind:'');
+        }
+        function cancelImport(clearStatus=true) {
+            pendingImport=null; importReadToken++;
+            document.getElementById('restoreFile').value='';
+            document.getElementById('importPreview').classList.add('transfer-hidden');
+            document.getElementById('importConfirm').checked=false;
+            document.getElementById('applyImportBtn').disabled=true;
+            if(clearStatus) importStatus();
+        }
+        async function restoreJSON(event) {
+            const file=event.target.files[0]; if(!file) return;
+            cancelImport(); const token=importReadToken;
+            try {
+                if(file.size>20*1024*1024) throw new Error('ไฟล์เกิน 20 MB กรุณาตรวจสอบไฟล์สำรอง');
+                let raw;
+                try {raw=JSON.parse((await file.text()).replace(/^\uFEFF/,''));} catch(e) {throw new Error('อ่าน JSON ไม่ได้ กรุณาเลือกไฟล์สำรองที่ถูกต้อง');}
+                if(token!==importReadToken) return;
+                const data=parseBackup(raw); pendingImport=data;
+                putText('importFileName',file.name);
+                putText('importFileMeta','v'+data.version+(data.exportDate?' · '+new Date(data.exportDate).toLocaleString('th-TH'):''));
+                putText('importTripCount',data.trips.length.toLocaleString('th-TH'));
+                putText('importExpenseCount',data.expenses.length.toLocaleString('th-TH'));
+                putText('importIncome',transferMoney(data.trips.reduce((n,t)=>n+t.total,0)));
+                putText('importExpenseTotal',transferMoney(data.expenses.reduce((n,e)=>n+e.amount,0)));
+                putText('importSettingsInfo','เป้าหมายรายวัน '+transferMoney(data.dailyGoal)+' · ไมล์น้ำมันเครื่อง '+data.oilKm.toLocaleString('th-TH')+' กม. '+(data.hasSettings?'· รวมการตั้งค่าแอปด้วย':'· ไฟล์เก่าไม่มีการตั้งค่าเพิ่มเติม จะคงค่าปัจจุบันไว้'));
+                const current=trips.length+expenses.length;
+                putText('importWarning',current?'เครื่องนี้มี '+current.toLocaleString('th-TH')+' รายการ การนำเข้าจะแทนที่ทั้งหมด กรุณาสำรองข้อมูลเครื่องนี้ก่อน ไม่ใช่การรวมรายการ':'การนำเข้าจะแทนที่ข้อมูลและการตั้งค่าที่มีในเครื่องนี้ ไม่ใช่การรวมรายการ');
+                document.getElementById('importPreview').classList.remove('transfer-hidden');
+                importStatus('ตรวจสอบไฟล์ผ่านแล้ว กรุณาตรวจยอดก่อนยืนยัน','ok');
+            } catch(e) { if(token===importReadToken) { cancelImport(false); importStatus(e.message||'ไฟล์ไม่ถูกต้อง','error'); } }
+        }
+        function applyImport() {
+            const d=pendingImport;
+            if(!d||!document.getElementById('importConfirm').checked) return;
+            if((trips.length||expenses.length)&&!confirm('ข้อมูลปัจจุบันทั้งหมดจะถูกแทนที่ ('+(trips.length+expenses.length)+' รายการ) คุณสำรองไฟล์เครื่องนี้แล้วและต้องการนำเข้าหรือไม่?')) return;
+            const next={rider_trips:JSON.stringify(d.trips),rider_expenses:JSON.stringify(d.expenses),rider_oil_km:String(d.oilKm),rider_daily_goal:String(d.dailyGoal),rider_last_app:d.lastUsedApp??lastUsedApp,rider_last_pay:d.lastUsedPay??lastUsedPay,rider_sunlight:String(d.isSunlightMode??isSunlightMode)};
+            const previous={}; let written=[];
+            try {
+                for(const key of BACKUP_KEYS) previous[key]=localStorage.getItem(key);
+                for(const key of BACKUP_KEYS) {localStorage.setItem(key,next[key]);written.push(key);}
+            } catch(e) {
+                let rollbackOK=true;
+                for(const key of written.reverse()) {try {if(previous[key]===null)localStorage.removeItem(key);else localStorage.setItem(key,previous[key]);}catch(err){rollbackOK=false;}}
+                importStatus(rollbackOK?'นำเข้าไม่สำเร็จ (พื้นที่จัดเก็บอาจไม่พอ) ข้อมูลเดิมยังอยู่':'บันทึกไม่สำเร็จและกู้คืนบางค่าไม่ได้ โปรดใช้ไฟล์สำรองเครื่องนี้','error'); return;
+            }
+            trips=d.trips;expenses=d.expenses;accumulatedKm=d.oilKm;dailyGoal=d.dailyGoal;
+            lastUsedApp=next.rider_last_app;lastUsedPay=next.rider_last_pay;isSunlightMode=next.rider_sunlight==='true';
+            document.body.classList.toggle('sunlight-mode',isSunlightMode);
+            selectAppTile(lastUsedApp);selectPaymentTile(lastUsedPay);
+            cancelImport(false);
+            importStatus('นำเข้าสำเร็จ: งานวิ่ง '+trips.length+' รายการ / รายจ่าย '+expenses.length+' รายการ ข้อมูลบันทึกในเครื่องนี้แล้ว','ok');
+            showToast('ย้ายข้อมูลสำเร็จแล้ว!','fa-circle-check text-emerald-400');
+            renderDashboard();
         }
 
         function exportCSV() {
@@ -1537,12 +1689,13 @@
                 return;
             }
             let csv = "\uFEFFประเภท,วันที่,เวลา,แอป/หมวดหมู่,จำนวนงานพ่วง,ค่ารอบ/ค่าใช้จ่าย,ทิป,ช่องทางรับเงิน,ระยะทาง (กม.),รวมเงิน,หมายเหตุ\n";
+            const csvText = value => {let v=String(value??'');if(/^[=+@\-\t\r]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"';};
             trips.forEach(t => {
                 const pay = t.paymentType === 'cash' ? 'เงินสด' : (t.paymentType === 'transfer' ? 'เงินโอน' : 'กระเป๋าแอป');
-                csv += `รายรับ,${t.date},${t.time || '-'},${t.app},${t.batchCount || 1},${t.fare},${t.tip},${pay},${t.distance || 0},${t.total},"${t.note || ''}"\n`;
+                csv += `รายรับ,${t.date},${t.time || '-'},${t.app},${t.batchCount || 1},${t.fare},${t.tip},${pay},${t.distance || 0},${t.total},${csvText(t.note)}\n`;
             });
             expenses.forEach(e => {
-                csv += `รายจ่าย,${e.date},${e.time || '-'},${e.category},-,${e.amount},0,-,-,${e.amount},"${e.note || ''}"\n`;
+                csv += `รายจ่าย,${e.date},${e.time || '-'},${e.category},-,${e.amount},0,-,-,${e.amount},${csvText(e.note)}\n`;
             });
             const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8;' }));
             const a = document.createElement('a');
@@ -1570,5 +1723,12 @@
             renderDashboard();
         }
     </script>
-</body>
+<script>
+let kaabInstallPrompt;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();kaabInstallPrompt=e;});
+window.addEventListener('appinstalled',()=>{kaabInstallPrompt=null;document.getElementById('installBtn').hidden=true;});
+async function installKaab(){if(kaabInstallPrompt){await kaabInstallPrompt.prompt();kaabInstallPrompt=null;return;}alert(/iPhone|iPad|iPod/.test(navigator.userAgent)?'เปิดใน Safari แล้วแตะ แชร์ > เพิ่มไปยังหน้าจอโฮม':'เปิดเมนูเบราว์เซอร์ แล้วเลือก ติดตั้งแอป หรือ เพิ่มไปยังหน้าจอหลัก (ต้องเปิดผ่าน HTTPS หรือ localhost)');}
+if(matchMedia('(display-mode: standalone)').matches||navigator.standalone)document.getElementById('installBtn').hidden=true;
+if('serviceWorker' in navigator && /^(https?:)$/.test(location.protocol))navigator.serviceWorker.register('./sw.js').catch(console.warn);
+</script></body>
 </html>
